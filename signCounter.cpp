@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int main(void) {
     int num, positive = 0, negative = 0, zero = 0; // Variable num is used to store the number inputted.
     int sizeNumber;  // Variable to store the number of inputs required.
@@ -10,6 +11,7 @@ int main(void) {
     char zeroMsg[] = "Zero:     %2d\n";
     char lineDivider[] = "------------\n";
     char fmt[] = "%d";
+    
     _asm {
         // Receiving the number of inputs required. 
         lea eax, msgSize
